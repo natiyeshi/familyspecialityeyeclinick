@@ -271,6 +271,29 @@ a{
 }
 
 @media (max-width:700px) {
+
+    .top-contact{
+        justify-content: center;
+        margin: 0;
+    }
+    .call{
+        margin: 0;
+    }
+    
+    .contact-left{
+        border: none;
+        border-bottom: .5em solid var(--white);
+        border-radius: .4em;
+    }
+
+    .service{
+    background-image: linear-gradient(rgba(61, 40, 40, 0.7), rgba(61, 40, 40, 0.7)),url("../assets/img/mob-pexels-negative-space-48604.jpg");
+        
+    }
+    header{
+        background-image: linear-gradient(rgba(61, 40, 40, 0.7), rgba(61, 40, 40, 0.7)),url("../assets/img/mob-pexels-pixabay-63320.jpg.png");
+
+    }
    .header-topic,.service-topic{
         font-size: 120%;
    }
@@ -280,9 +303,7 @@ a{
     .service-div{
         grid-template-columns: 90%;
     }
-    .service{
-        
-    }
+   
     .service-div-files{
         height: 100px;
     }
