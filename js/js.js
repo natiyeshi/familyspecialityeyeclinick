@@ -35,6 +35,6 @@ function ch(num){
 }
 
 
-function copy(){
-    navigator.clipboard.writeText("+251956954712")    
+function copy(val){
+    navigator.clipboard.writeText(val)    
 }

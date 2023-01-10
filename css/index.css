@@ -183,8 +183,6 @@ a{
     grid-template-rows: 30% 10% 60%;
     align-items: center;
     text-align: center;
-    justify-content: center;
-    
 }
 
 .service-topic{
@@ -197,9 +195,10 @@ a{
 .service-div{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width: 100%;
+    width: 80%;
     align-items: center;
     justify-content: center;
+    justify-self: center;
     gap: 1em;
     
 }
@@ -212,6 +211,14 @@ a{
     align-items: center;
     height: 200px;
     border-radius: 10px;
+    cursor: pointer;
+    box-shadow: .2em .1em 1em .4em var(--black);
+
+}
+
+.service-div-files:hover{
+    box-shadow: none;
+
 }
 
 
@@ -224,7 +231,8 @@ a{
 
 .service-div-notes{
     color: var(--black);
-    max-width: 200px;
+    max-width: 60%;
+    margin: auto;
 }
 
 
@@ -287,9 +295,11 @@ a{
     }
 
     .service{
-    /* background-image: linear-gradient(rgba(61, 40, 40, 0.7), rgba(61, 40, 40, 0.7)),url("../assets/img/mob-pexels-negative-space-48604.jpg"); */
+        background-image: linear-gradient(rgba(61, 40, 40, 0.7), rgba(61, 40, 40, 0.7)),url("../assets/img/mob-pexels-negative-space-48604.jpg");
+        grid-template-rows: 5% 25% 60%;
         
     }
+    
     header{
         background-image: linear-gradient(rgba(61, 40, 40, 0.7), rgba(61, 40, 40, 0.7)),url("../assets/img/mob-pexels-pixabay-63320.jpg.png");
 
@@ -299,13 +309,16 @@ a{
    }
    .header-mid-para,.about-mid-para,.service-mid-para{
     font-size: larger;
+    width: 75%;
+
    }
     .service-div{
-        grid-template-columns: 90%;
+        grid-template-columns: 100%;
+        height: fit-content;
     }
    
     .service-div-files{
-        height: 100px;
+        height: 170px;
     }
     
     .contact-img{
