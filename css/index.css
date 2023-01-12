@@ -100,6 +100,7 @@ a{
     grid-template-columns: auto;
     align-items: center;
     text-align: center;
+    z-index:1000;
 }
 
 .link{
@@ -116,6 +117,7 @@ a{
     opacity: .6;
     display: flex;
     justify-content: right;
+    z-index:1000;
     align-items: center;   
 }
 
@@ -124,6 +126,8 @@ a{
     color: var(--white);
     font-size: larger;
     cursor: pointer;
+    font-weight: bold;
+
 }
 
 .call:hover::after{
@@ -138,9 +142,6 @@ a{
     font-size: small;
 }
 
-.call:hover{
-    font-weight: bold;
-}
 
 .about{
     height: 100vh;
@@ -180,7 +181,7 @@ a{
     background-repeat: no-repeat;
     background-size: 100% 100vh;
     display: grid;
-    grid-template-rows: 30% 10% 60%;
+    grid-template-rows: 20% 10% 60% 10%;
     align-items: center;
     text-align: center;
 }
@@ -192,34 +193,68 @@ a{
     gap: 2em;
 }
 
-.service-div{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    width: 80%;
-    align-items: center;
+.nexts{
+    display: flex;
     justify-content: center;
-    justify-self: center;
     gap: 1em;
-    
 }
 
+.nexts button{
+    padding: .4em;
+    cursor: pointer;
+    padding: 1em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: bolder;
+    border: none;
+}
+
+.nexts button:hover{
+    box-shadow: .2em .2em .8em .2em rgb(116, 116, 116);
+}
+
+.service-div{
+    display:flex;
+    
+    width: 910px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    justify-self: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+@media (max-width:1320px) {
+    .service-div{
+        width: 610px;
+    }
+}
+
+@media (max-width:950px) {
+    .service-div{
+        width: 310px;
+    }
+   
+}
+
+
+
 .service-div-files{
+    /* transform: translateX(-810px); */
+    min-width: 300px;
+    height: 200px;
     background-color: white;
     display: grid;
     grid-template-rows: 40% 60%;
     justify-content: center;
     align-items: center;
-    height: 200px;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: .2em .1em 1em .4em var(--black);
-
 }
 
-.service-div-files:hover{
-    box-shadow: none;
 
-}
+
 
 
 .service-div-topic{
@@ -277,6 +312,11 @@ a{
 .contact-note{
     font-size: x-large;
 }
+
+.contact-note:hover{
+    font-weight: bold;
+}
+
 
 @media (max-width:700px) {
 

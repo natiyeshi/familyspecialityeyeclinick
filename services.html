@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .file{
+            text-align: center;
+        }
+        .main{
+            margin: 5em auto;
+            border: 1px solid black;
+            display: flex;
+            overflow: hidden;
+            text-align: center;
+            width: 100px;
+        }
+        .a{
+            color:green ;
+            width: 100px;
+            text-align: center;
+            transform: ;
+        }
+    </style>
+</head>
+<body>
+    <div class="file">
+        <div class="main">
+            <div class="a"><img width="100px" src="/assets/img/pexels-wendel-moretti-1925630.jpg" alt=""></div>
+            <div class="a"><img width="100px" src="/assets/img/pexels-rebecca-swafford-801867.jpg" alt=""></div>
+            <div class="a"><img width="100px" src="/assets/img/pexels-pixabay-63320.jpg" alt=""></div>
+
+        </div>
+        <button onclick="next()">next</button>
+    </div>
+</body>
+</html>
+<script>
+    c = 1
+    function next() {
+
+        a = document.querySelectorAll(".a")
+        a.forEach(e => {
+            e.style.transition = "transform 0.4s ease-in-out";            
+            e.style.transform = "translateX(-"+c*100+"px)";            
+        });
+        c += 1
+    }
+</script>

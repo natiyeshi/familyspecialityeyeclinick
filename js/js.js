@@ -38,3 +38,22 @@ function ch(num){
 function copy(val){
     navigator.clipboard.writeText(val)    
 }
+
+tr = 0 
+
+function nextService(b = false) {
+    if (b == false && tr > -500)
+        tr -=  103  
+    else if(b == true && tr < 0)
+        tr += 103
+    else
+        return
+    console.log(tr);
+    services = document.querySelectorAll(".service-div-files")
+    services.forEach(element => {
+        element.style.transition = "transform 0.4s ease-in-out";
+        element.style.transform = "translateX("+tr+"%)";
+    });
+}
+
+// nextService()
