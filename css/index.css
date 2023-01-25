@@ -93,7 +93,7 @@ a{
     right: 0;
     bottom: 50%;
     width: 40px;
-    height: 150px;
+    height: 130px;
     border-radius: 10px 0 0 10px;
     background-color: var(--white);
     display: grid;
@@ -101,6 +101,22 @@ a{
     align-items: center;
     text-align: center;
     z-index:1000;
+}
+
+.nav-right{
+    position: fixed;
+    right: 0;
+    bottom: 40%;
+    width: 40px;
+    height: 45px;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    text-align: center;
+    z-index:1000;
+    cursor: pointer;
 }
 
 .link{
@@ -268,6 +284,7 @@ a{
     color: var(--black);
     max-width: 60%;
     margin: auto;
+    font-size: large;
 }
 
 

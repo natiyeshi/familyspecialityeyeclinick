@@ -57,3 +57,130 @@ function nextService(b = false) {
 }
 
 // nextService()
+
+c = 0
+
+function changeLanguage(){
+    if (c == 0){
+        c++
+        toAmharic()
+    } else if(c == 1){
+        toOromigna();
+        c ++;
+
+    } else{
+        c = 0;
+        toEnglish()
+        
+    }
+}
+
+
+languages = {
+    "oro" : ["Moora ljaa baqaqsanii yaaluu fi Leensii nam-tolchee galchuu","Wal'aansa Infeekshinii Ijaa (Tiraakoomaa Dabalatee)","Wal'aansaa fi hordoffii dhukkuba GILAAKOOMAA","Hordoffii namoota dhibee Sukkaaraa fi Dhiibbaa Dhiigaa qabanii","Wal'aansa Foroforii Ijaa fi Gogiinsa ljaa","Safaraa fi Ajaja Golgituu IjaaTeessoo"]
+    ,
+    "amh" : ["የዐይን ሞራ ግርዶሽ ቀዶ-ህክምና እና በአርቴፊሻአል ሌንስ መተካት","የዐይን ኢንፌክሽን ህክምና (ትራኮማን ጨምሮ)","የግላኮማ በሽታ ህክምና እና ክትትል","የስኳር እና የደም ግፊት ታካሚዎች ክትትል","የዐይን ፎሮፎር እና ድርቀት ህክምና","የዐይን መነጸር መለካትና መግጠም እና የዖይን ጤና አጠባበቅ ምክር አገልግሎት"]
+    ,
+    "eng" : ["Cataract surgery and artificial lens replacement","Eye infection treatment(including tracoma)","Treatment and monitoring of glaucoma","Monitoring of diabetes and hypertension patients","Eye dandruff and dryness treatment","Eyeglass measurement and fitting and eye health care advice service"]
+}
+
+
+headerTopic = document.querySelector(".header-topic")
+headerMidPara = document.querySelector(".header-mid-para")
+headerLast = document.querySelector(".header-last")
+aboutTopic = document.querySelector(".about-topic")
+aboutMidPara = document.querySelector(".about-mid-para")
+
+aboutButton = document.querySelector(".about-button")
+aboutMidPara = document.querySelector(".about-mid-para")
+
+serviceTopic = document.querySelector(".service-topic")
+servicMidPara = document.querySelector(".service-mid-para")
+serviceTopic = document.querySelector(".service-topic")
+serviceDivTopic = document.querySelectorAll(".service-div-topic")
+serviceDivNotes = document.querySelectorAll(".service-div-notes")
+
+function toAmharic(){
+    headerTopic.innerHTML = "<h1>ፋሚሊ እስፔሻሊቲ የዐይን ህክምና ክሊኒክ </h1>"
+    headerMidPara.innerHTML = `ፋሚሊ እስፔሻሊቲ የዐይን ህክምና ክሊኒክ ... ዐላማችን እይታዎት <span class="make-white">እይታዎት</span>  ነው፡፡ 
+    ከዶክተሮ ጋር መመካከር እይታዎን ለመጠበቅ አንድ እርምጃ ነው፡፡`
+    headerLast.innerHTML = `<a href="#about" class="header-button">ቀጥል</a>`
+    
+
+
+    aboutTopic.innerHTML = `<span class="dash"></span>   <h1>ስለኛ</h1> <span class="dash"></span> `
+    aboutMidPara.innerHTML = `
+                                <span class="make-white">ከ 2021 ጀምሮ...</span> 
+                                የተለያዮ የዐይን እና ተያያዥ ህክምናዎችን ስንሰጥ የቆየን ሲሆን  
+                                የአይን ህክምና ፣በዘረፉ የተካኑ ሀኪሞቻችን ለእርሶ የአይን ደህንነት ሁሌም ይጨነቃሉ።
+                            `
+    aboutButton.innerHTML = "አገልግሎታችን"
+    serviceTopic.innerHTML = ` <span class="dash"></span>   <h1>አገልግልታችን</h1> <span class="dash"></span>`
+    servicMidPara.innerHTML = `የምንሰጣቸው አገልግሎቶች <span class="make-white">...</span>`
+    serviceDivTopic.forEach(element =>{
+        element.innerHTML = "አገልግሎታችን"
+    })
+    serviceDivNotes.forEach((element,c) =>{
+        element.innerHTML = languages["amh"][c]
+    })
+}
+
+function toEnglish(){
+    headerTopic.innerHTML = "<h1>Family SPECIALITY EYE CLINIC </h1>"
+    headerMidPara.innerHTML = ` Talking with your <span class="make-white">doctor</span> is one step toward protecting your vision.`
+    headerLast.innerHTML = `<a href="#about" class="header-button">Continue</a>`
+    
+
+    aboutTopic.innerHTML = `<span class="dash"></span>   <h1>About-us</h1> <span class="dash"></span> `
+    aboutMidPara.innerHTML = `
+                                From providing our patients with truly comprehensive eye exams to the diagnosis 
+                                and treatment of <span class="make-white">eye diseases, </span> 
+                                our team of highly skilled doctors and staff are passionate about your eye health.
+                            `
+    aboutButton.innerHTML = "service"
+    serviceTopic.innerHTML = ` <span class="dash"></span>   <h1>Services</h1> <span class="dash"></span>`
+    servicMidPara.innerHTML = `
+                                We provide services regarding eye  
+                                problems  <span class="make-white">including</span> 
+                            `
+    serviceDivTopic.forEach(element =>{
+            element.innerHTML = "Service"
+        })
+    
+    serviceDivNotes.forEach((element,c) =>{
+            element.innerHTML = languages["eng"][c]
+        })
+}
+
+
+function toOromigna(){
+    headerTopic.innerHTML = "<h1>Family SPECIALITY EYE CLINIC </h1>"
+    headerMidPara.innerHTML = ` <span class="make-white">Doktora</span> kee waliin haasa’uun mul’ata kee eeguuf tarkaanfii tokko.`
+    headerLast.innerHTML = `<a href="#about" class="header-button">itti fufaa</a>`
+    
+
+    aboutTopic.innerHTML = `<span class="dash"></span>   <h1>Waa'ee keenya</h1> <span class="dash"></span> `
+    aboutMidPara.innerHTML = `
+                    <span class="make-white">Bara 2021 ...</span>irraa eegalee wal'aansa ijaa fi 
+                    kanneen kanaan walqabatan adda addaa kennaa kan 
+                    turre yoo ta'u, <span class="make-white">hakiimonni</span> keenya wal'aansa ijaa 
+                    irratti adda ta'an yeroo hunda nageenya ija
+                    keessaniif yaaddoo qabu.
+            `
+    aboutButton.innerHTML = "Tajaajila keenya"
+    serviceTopic.innerHTML = ` <span class="dash"></span>   <h1>Tajaajila keenya</h1> <span class="dash"></span>`
+    servicMidPara.innerHTML = `
+                                Tajaajilli keenya<span class="make-white">...</span>              
+                            `
+    serviceDivTopic.forEach(element =>{
+            element.innerHTML = "Tajaajila keenya"
+        })
+    
+    serviceDivNotes.forEach((element,c) =>{
+            element.innerHTML = languages["oro"][c]
+        })
+
+}
+
+
+// changeToAmharic()
