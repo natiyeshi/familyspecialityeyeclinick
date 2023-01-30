@@ -36,7 +36,7 @@ function ch(num){
 
 
 function copy(val){
-    navigator.clipboard.writeText(val)    
+    navigator.clipboard.writeText("+251 91 086 1012")    
 }
 
 tr = 0 
@@ -77,7 +77,7 @@ function changeLanguage(){
 
 
 languages = {
-    "oro" : ["Moora ljaa baqaqsanii yaaluu fi Leensii nam-tolchee galchuu","Wal'aansa Infeekshinii Ijaa (Tiraakoomaa Dabalatee)","Wal'aansaa fi hordoffii dhukkuba GILAAKOOMAA","Hordoffii namoota dhibee Sukkaaraa fi Dhiibbaa Dhiigaa qabanii","Wal'aansa Foroforii Ijaa fi Gogiinsa ljaa","Safaraa fi Ajaja Golgituu IjaaTeessoo"]
+    "oro" : ["Moora ljaa baqaqsanii yaaluu fi Leensii nam-tolchee galchuu","Wal'aansa Infeekshinii Ijaa (Tiraakoomaa Dabalatee)","Wal'aansaa fi hordoffii dhukkuba GILAAKOOMAA","Hordoffii namoota dhibee Sukkaaraa fi Dhiibbaa Dhiigaa qabanii","Wal'aansa Foroforii Ijaa fi Gogiinsa ljaa","Safaraa fi Ajaja Golgituu IjaaTeessoo Nekemte, infront of St.Michael Building"]
     ,
     "amh" : ["የዐይን ሞራ ግርዶሽ ቀዶ-ህክምና እና በአርቴፊሻአል ሌንስ መተካት","የዐይን ኢንፌክሽን ህክምና (ትራኮማን ጨምሮ)","የግላኮማ በሽታ ህክምና እና ክትትል","የስኳር እና የደም ግፊት ታካሚዎች ክትትል","የዐይን ፎሮፎር እና ድርቀት ህክምና","የዐይን መነጸር መለካትና መግጠም እና የዖይን ጤና አጠባበቅ ምክር አገልግሎት"]
     ,
@@ -102,7 +102,7 @@ serviceDivNotes = document.querySelectorAll(".service-div-notes")
 
 function toAmharic(){
     headerTopic.innerHTML = "<h1>ፋሚሊ እስፔሻሊቲ የዐይን ህክምና ክሊኒክ </h1>"
-    headerMidPara.innerHTML = `ፋሚሊ እስፔሻሊቲ የዐይን ህክምና ክሊኒክ ... ዐላማችን እይታዎት <span class="make-white">እይታዎት</span>  ነው፡፡ 
+    headerMidPara.innerHTML = `ፋሚሊ እስፔሻሊቲ የዐይን ህክምና ክሊኒክ ... ዐላማችን <span class="make-white">እይታዎት</span>  ነው፡፡ 
     ከዶክተሮ ጋር መመካከር እይታዎን ለመጠበቅ አንድ እርምጃ ነው፡፡`
     headerLast.innerHTML = `<a href="#about" class="header-button">ቀጥል</a>`
     
@@ -112,7 +112,7 @@ function toAmharic(){
     aboutMidPara.innerHTML = `
                                 <span class="make-white">ከ 2021 ጀምሮ...</span> 
                                 የተለያዮ የዐይን እና ተያያዥ ህክምናዎችን ስንሰጥ የቆየን ሲሆን  
-                                የአይን ህክምና ፣በዘረፉ የተካኑ ሀኪሞቻችን ለእርሶ የአይን ደህንነት ሁሌም ይጨነቃሉ።
+                                የአይን ህክምና ፣በዘርፉ የተካኑ ሀኪሞቻችን ለእርሶ የአይን ደህንነት ሁሌም ይጨነቃሉ።
                             `
     aboutButton.innerHTML = "አገልግሎታችን"
     serviceTopic.innerHTML = ` <span class="dash"></span>   <h1>አገልግልታችን</h1> <span class="dash"></span>`
