@@ -86,6 +86,7 @@ languages = {
 
 
 headerTopic = document.querySelector(".header-topic")
+cont = document.querySelector(".cont")
 headerMidPara = document.querySelector(".header-mid-para")
 headerLast = document.querySelector(".header-last")
 aboutTopic = document.querySelector(".about-topic")
@@ -101,7 +102,7 @@ serviceDivTopic = document.querySelectorAll(".service-div-topic")
 serviceDivNotes = document.querySelectorAll(".service-div-notes")
 
 function toAmharic(){
-    headerTopic.innerHTML = "<h1>ፋሚሊ እስፔሻሊቲ የዐይን ህክምና ክሊኒክ </h1>"
+    cont.innerHTML = "ነቀምት ከቅዱስ ሚካኤል ቤ/ክ ፊትለፊት"
     headerMidPara.innerHTML = `ፋሚሊ እስፔሻሊቲ የዐይን ህክምና ክሊኒክ ... ዐላማችን <span class="make-white">እይታዎት</span>  ነው፡፡ 
     ከዶክተሮ ጋር መመካከር እይታዎን ለመጠበቅ አንድ እርምጃ ነው፡፡`
     headerLast.innerHTML = `<a href="#about" class="header-button">ቀጥል</a>`
@@ -126,6 +127,7 @@ function toAmharic(){
 }
 
 function toEnglish(){
+    cont.innerHTML = "Nekemte, infront of St.Michael Building"
     headerTopic.innerHTML = "<h1>Family SPECIALITY EYE CLINIC </h1>"
     headerMidPara.innerHTML = ` Talking with your <span class="make-white">doctor</span> is one step toward protecting your vision.`
     headerLast.innerHTML = `<a href="#about" class="header-button">Continue</a>`
@@ -154,6 +156,8 @@ function toEnglish(){
 
 
 function toOromigna(){
+    cont.innerHTML = "Naqamtee, gamoo Q/ Mikaa'elii fuuldura, katangaa xiqqoo seenee"
+    
     headerTopic.innerHTML = "<h1>Family SPECIALITY EYE CLINIC </h1>"
     headerMidPara.innerHTML = ` <span class="make-white">Doktora</span> kee waliin haasa’uun mul’ata kee eeguuf tarkaanfii tokko.`
     headerLast.innerHTML = `<a href="#about" class="header-button">itti fufaa</a>`
