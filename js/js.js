@@ -77,7 +77,7 @@ function changeLanguage(){
 
 
 languages = {
-    "oro" : ["Moora ljaa baqaqsanii yaaluu fi Leensii nam-tolchee galchuu","Wal'aansa Infeekshinii Ijaa (Tiraakoomaa Dabalatee)","Wal'aansaa fi hordoffii dhukkuba GILAAKOOMAA","Hordoffii namoota dhibee Sukkaaraa fi Dhiibbaa Dhiigaa qabanii","Wal'aansa Foroforii Ijaa fi Gogiinsa ljaa","Safaraa fi Ajaja Golgituu IjaaTeessoo Nekemte, infront of St.Michael Building"]
+    "oro" : ["Moora ljaa baqaqsanii yaaluu fi Leensii nam-tolchee galchuu","Wal'aansa Infeekshinii Ijaa (Tiraakoomaa Dabalatee)","Wal'aansaa fi hordoffii dhukkuba GILAAKOOMAA","Hordoffii namoota dhibee Sukkaaraa fi Dhiibbaa Dhiigaa qabanii","Wal'aansa Foroforii Ijaa fi Gogiinsa ljaa","Safaraa fi Ajaja Golgituu IjaaTeessoo Naqamtee, gamoo Q/ Mikaa'elii fuuldura, katangaa xiqqoo seenee"]
     ,
     "amh" : ["የዐይን ሞራ ግርዶሽ ቀዶ-ህክምና እና በአርቴፊሻአል ሌንስ መተካት","የዐይን ኢንፌክሽን ህክምና (ትራኮማን ጨምሮ)","የግላኮማ በሽታ ህክምና እና ክትትል","የስኳር እና የደም ግፊት ታካሚዎች ክትትል","የዐይን ፎሮፎር እና ድርቀት ህክምና","የዐይን መነጸር መለካትና መግጠም እና የዖይን ጤና አጠባበቅ ምክር አገልግሎት"]
     ,
@@ -183,4 +183,3 @@ function toOromigna(){
 }
 
 
-// changeToAmharic()
