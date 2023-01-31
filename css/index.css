@@ -282,7 +282,7 @@ a{
 
 .service-div-notes{
     color: var(--black);
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
     font-size: 17px;
 }
